@@ -39,7 +39,7 @@ body.dark {
 body {
   background-color: var(--background-primary);
   color: var(--font-color-primary);
-  padding: 100px 100px;
+  padding: 10px 100px;
   font-size: 1.05rem;
   font-family: var(--font-family-primary);
 }
