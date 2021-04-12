@@ -447,3 +447,77 @@ input[type='file']::before {
     margin-top: 10px;
   }
 }
+
+/* Customization */
+
+.transition {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.footer {
+width:100%;
+height:100%;
+padding:20px 0 25px;
+overflow:hidden;
+/*   background:url(http://elramsisy.gq/img/bg.png); */
+background-size:cover;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+text-align: center;
+}
+
+.footer .container .icons {
+margin:20px 0 0;
+color: #1E88E5;
+}
+.footer .container .icons a i{
+margin-right:15px;
+color:#1E88E5;
+font-size:32px;
+padding:8px;
+}
+.footer .container .icons a i:hover{
+font-size:40px;
+padding:0;
+}
+.footer .container .copy{
+margin:25px 0 0;
+color:#1E88E5;
+}
+.footer .container .copy p i {
+color:#1E88E5;
+animation:heart 4s infinite
+}
+@keyframes heart{
+10%{font-size:20px}
+20%{font-size:16px}
+30%{font-size:20px}
+40%{font-size:16px}
+50%{font-size:20px}
+60%{font-size:16px}
+70%{font-size:20px}
+80%{font-size:16px}
+90%{font-size:20px}
+100%{font-size:20px}
+}
+
+/* Site */
+.cr a {
+display:block;
+text-decoration:none;
+width: 20%;
+margin: 20px 40% 0 40%;
+font-size: 18px;
+border-radius: 5px;
+text-align:center;
+transition: all 0.6s ease-in-out;
+color:#1E88E5;
+}
+
+.cr a:hover {
+font-size: 20px;
+}
