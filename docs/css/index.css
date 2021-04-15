@@ -521,3 +521,35 @@ color:#1E88E5;
 .cr a:hover {
 font-size: 20px;
 }
+
+/* Footer Bottom */
+
+/* * {
+  margin: 0px;
+} */
+#footer-bottom {
+  /* margin-top: 900px; */
+  /* padding: 20px; */
+  text-align: center; 
+ 
+}
+
+/* #footer-bottom {
+  background: rgb(0, 0, 0);
+} */
+
+
+.menu-bottom {
+  transition: .2s ease-in-out;
+  /* color: #ffffff; */
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.menu-bottom:hover {
+  background-color: #1E88E5;
+  color: #fff;
+  padding: 14px 14px 20px 14px;
+ 
+}

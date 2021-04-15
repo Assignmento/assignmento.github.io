@@ -14,7 +14,7 @@
     content="assignmento, text to handwriting, text-to-handwrting, convert text to image, write assignment online, hand writing generator" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="author" content="Usama Sarwar" />
-  <meta name="copyright" content="Usama Sarwar" />
+  <meta name="copyright" content="Assignmento" />
   <meta name="robots" content="follow" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Assignmento" />
@@ -65,6 +65,7 @@
 </head>
 
 <body>
+
   <main>
     <button aria-label="Activate Dark Mode" title="Toggle Dark Mode" aria-pressed="false" onclick="toggleTheme(this)"
       class="dark-mode-toggle">
@@ -140,7 +141,7 @@
                 <div>
                   <label class="block" for="handwriting-font">Handwriting Font</label>
                   <select id="handwriting-font">
-                    <option  style="font-family: 'Homemade Apple';" value="'Homemade Apple', cursive">
+                    <option style="font-family: 'Homemade Apple';" value="'Homemade Apple', cursive">
                       Homemade Apple
                     </option>
                     <option selected style="font-family: 'Caveat', cursive; font-size: 13pt;" value="'Caveat', cursive">
@@ -385,12 +386,20 @@
     </section>
   </main>
   <footer style="padding: 40px 0px 10px 0px;">
-    <br />
-    ⚠ Use at your own risk :p <br />
+
     <!-- Start Footer -->
     <div class='footer'>
       <!-- Container -->
       <div class='container text-center'>
+
+        <!-- Copy -->
+        <div class='copy'>
+          <p class='upper'>
+            <!-- Made With  -->
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <!-- by <a href='hhtps://github.com/usamasarwar/'>Usama Sarwar</a> -->
+          </p>
+        </div>
         <!--Icons -->
         <div class='icons'>
           <a href='https://github.com/UsamaSarwar'><i class="fa fa-github fa-2x transition" aria-hidden="true"></i></a>
@@ -404,18 +413,18 @@
               aria-hidden="true"></i></a>
           <a href='https://wa.me/923100007773'><i class="fa fa-whatsapp fa-2x transition" aria-hidden="true"></i></a>
         </div>
-        <!-- Copy -->
-        <div class='copy'>
-          <p class='upper'>
-            Made With Love <i class="fa fa-heart" aria-hidden="true"></i> by <a
-              href='hhtps://github.com/usamasarwar/'>Usama Sarwar</a>
-          </p>
-        </div>
       </div>
-      <div class='cr'>
-        <a href='hhtps://assignmento.org/'>©Copyright 2021 Assignmento</a>
+      <div>
+        <!-- <div class='cr'> -->
+        </br><a href='hhtps://assignmento.org/'>©Copyright 2021 Assignmento</a>
       </div>
     </div>
+    <nav id="footer-bottom">
+      <a class="menu-bottom" href="https://m.me/assignmento.org">Contact Us</a>
+      <a class="menu-bottom" href="https://assignmento.org/dmca.html">DMCA</a>
+      <a class="menu-bottom" href="https://assignmento.org/privacypolicy.html">Privacy Policy</a>
+    </nav>
+
   </footer>
 
   <!-- Fixed Elements -->
@@ -522,7 +531,6 @@
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat" attribution="setup_tool" page_id="102396228646921">
   </div>
-
 </body>
 
 </html>
