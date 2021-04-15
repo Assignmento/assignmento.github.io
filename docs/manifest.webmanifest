@@ -1,6 +1,6 @@
 {
-  "name": "Text to Handwriting",
-  "short_name": "Text to Handwriting",
+  "name": "Assignmento",
+  "short_name": "Assignmento",
   "icons": [
     {
       "src": "images/android-chrome-192x192.png",
@@ -13,9 +13,9 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#09f",
+  "theme_color": "#000",
   "background_color": "#ddd",
   "display": "standalone",
   "start_url": ".",
-  "description": "I hate writing assignments so I made this tool that converts text to an image that looks like handwriting😛"
+  "description": "Content Writing Organization"
 }
