@@ -2,8 +2,9 @@
 .dark-mode-toggle {
   cursor: pointer;
   position: absolute;
-  top: 100px;
-  right: 150px;
+  top:60px;
+  /* right: 50px; */
+  left: 85%;
   border: none;
   background: transparent;
 }
