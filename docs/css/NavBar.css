@@ -193,21 +193,11 @@ i {
    backdrop-filter :blur(3px);
 }
 
-:-webkit-scrollbar {
-    width: 10px;
-  }
+
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #fff;
+  /*button border*/
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
   }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #1E88E5;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #1E88E5;
-  }
+
