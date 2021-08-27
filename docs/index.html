@@ -87,11 +87,11 @@
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="/js/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register("/js/pwabuilder-sw.js")
+                navigator.serviceWorker.register("pwabuilder-sw.js")
                     .then(registration => {
                         console.log('SW registered with scope:', registration.scope);
                         navigator.setAppBadge();
