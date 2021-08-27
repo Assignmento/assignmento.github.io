@@ -91,7 +91,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register("./js/pwabuilder-sw-register.js")
+                navigator.serviceWorker.register("/js/pwabuilder-sw.js")
                     .then(registration => {
                         console.log('SW registered with scope:', registration.scope);
                         navigator.setAppBadge();
