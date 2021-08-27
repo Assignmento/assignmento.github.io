@@ -1,0 +1,16 @@
+{
+    "name": "Assignmento",
+    "short_name": "Assignmento",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "description": "Text to Handwriting",
+    "prefer_related_applications": true,
+    "icons": [
+      {
+        "src": "../images/DP-T.png",
+        "type": "image/png"
+      }
+    ]
+  }
