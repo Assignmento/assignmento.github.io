@@ -24,4 +24,4 @@ There are lot of resources (articles, courses, videos) available for getting sta
 
 Lastly, It is fine if you mess something up. If there is anything wrong in the PR I will let you know how to fix that in comments of the PR.
 
-If you are still scared to drop a PR or need any help, you can always drop me a message on my [Messenger @UsamaSarwarOfficial](https://m.me/UsamaSarwarOfficial) or drop me an email at UsamaSarwarOfficial@gmail.com.
+If you are still scared to drop a PR or need any help, you can always drop me a message on my [Messenger @UsamaSarwarOfficial](https://m.me/UsamaSarwarOfficial) or drop me an email at contact@usama.dev.
