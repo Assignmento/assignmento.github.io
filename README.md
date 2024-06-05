@@ -1,1 +1,1 @@
-# [Assignmento](https://assignmento.guthub.io)
+# [Assignmento](https://assignmento.usama.dev)
