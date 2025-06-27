@@ -120,14 +120,8 @@
         });
     </script>
 
-    <!-- Cookie Consent Management (CookieHub) -->
-    <script src="https://cdn.cookiehub.eu/c2/802c09c0.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function (event) {
-            var cpm = {};
-            window.cookiehub.load(cpm);
-        });
-    </script>
+    <!-- Custom Cookie Consent Management -->
+    <script src="./js/consent-manager.js"></script>
 
     <!-- SEO Schema Markup -->
     <script type="application/ld+json">
@@ -586,6 +580,7 @@
             <a class="menu-bottom" target="_blank" rel="follow"
                 href="https://assignmento.usama.dev/privacypolicy.html">Privacy
                 Policy</a>
+            <a class="menu-bottom" href="javascript:void(0)" onclick="showConsentPreferences()">Cookie Settings</a>
         </nav>
         <div style="text-align: center;">
             </br><a href='https://assignmento.usama.dev/'>© 2025 Assignmento | Text to Handwriting Converter</a>
@@ -648,6 +643,65 @@
     <script src="./js/vendors/html2canvas.min.js" crossorigin="anonymous"></script>
     <script type="module" src="js/app.mjs"></script>
     <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
+    <!-- Custom Cookie Consent Banner -->
+    <div id="consent-banner" class="consent-banner" style="display: none;" role="banner" aria-label="Cookie consent">
+        <div class="consent-content">
+            <div class="consent-text">
+                <h4>🍪 We value your privacy</h4>
+                <p>We use cookies to enhance your experience, analyze site traffic, and personalize content. You can manage your preferences below.</p>
+            </div>
+            <div class="consent-buttons">
+                <button id="consent-accept-all" class="consent-btn consent-accept" aria-label="Accept all cookies">Accept All</button>
+                <button id="consent-reject-all" class="consent-btn consent-reject" aria-label="Reject all non-essential cookies">Reject All</button>
+                <button id="consent-customize" class="consent-btn consent-customize" aria-label="Customize cookie preferences">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Consent Settings Modal -->
+    <div id="consent-modal" class="consent-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="consent-modal-title">
+        <div class="consent-modal-content">
+            <div class="consent-modal-header">
+                <h3 id="consent-modal-title">Privacy Preferences</h3>
+                <button id="consent-modal-close" class="consent-close" aria-label="Close privacy preferences">&times;</button>
+            </div>
+            <div class="consent-modal-body">
+                <div class="consent-category">
+                    <div class="consent-category-header">
+                        <h4>Essential Cookies</h4>
+                        <span class="consent-required">Required</span>
+                    </div>
+                    <p>These cookies are necessary for the website to function and cannot be disabled.</p>
+                </div>
+                
+                <div class="consent-category">
+                    <div class="consent-category-header">
+                        <h4>Analytics Cookies</h4>
+                        <label class="consent-switch">
+                            <input type="checkbox" id="analytics-consent" checked aria-describedby="analytics-description">
+                            <span class="consent-slider" role="presentation"></span>
+                        </label>
+                    </div>
+                    <p id="analytics-description">Help us understand how visitors interact with our website by collecting anonymous information.</p>
+                </div>
+                
+                <div class="consent-category">
+                    <div class="consent-category-header">
+                        <h4>Advertising Cookies</h4>
+                        <label class="consent-switch">
+                            <input type="checkbox" id="advertising-consent" checked aria-describedby="advertising-description">
+                            <span class="consent-slider" role="presentation"></span>
+                        </label>
+                    </div>
+                    <p id="advertising-description">Used to deliver personalized advertisements and measure their effectiveness.</p>
+                </div>
+            </div>
+            <div class="consent-modal-footer">
+                <button id="consent-save-preferences" class="consent-btn consent-accept">Save Preferences</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         function toggleTheme(toggleButton) {
             if (document.body.classList.contains('dark')) {
@@ -688,7 +742,7 @@
     </script>
 
     <!-- AMP AdSense -->
-    <amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-4420380850852502" data-ad-slot="1437890858"
+    <amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-4420380850852502" data-ad-slot="1437890850852502"
         data-auto-format="mcrspv" data-full-width="">
         <div overflow=""></div>
     </amp-ad>
